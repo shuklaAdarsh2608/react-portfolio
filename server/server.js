@@ -8,6 +8,9 @@ const path = require('path');
 const fs = require('fs');
 const pdf = require('pdf-parse');
 require('dotenv').config();
+const railDB = `mysql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
+const connection = mysql.createConnection(railDB);
+module.exports = connection;x 
 
 const app = express();
 
