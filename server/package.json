@@ -1,15 +1,11 @@
 {
-  "name": "portfolio-app",
+  "name": "portfolio-server",
   "version": "1.0.0",
-  "description": "Portfolio website fullstack application",
-  "main": "server/server.js",
+  "description": "Portfolio website backend",
+  "main": "server.js",
   "scripts": {
-    "build": "npm install",
-    "start": "cd server && npm start",
-    "dev": "cd server && npm run dev",
-    "install-all": "cd server && npm install",
-    "test": "echo \"No tests specified\" && exit 0",
-    "postinstall": "cd server && npm install"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -25,22 +21,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
-  },
-  "keywords": [
-    "portfolio",
-    "express",
-    "nodejs",
-    "backend",
-    "api"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "your-repository-url"
   }
 }
